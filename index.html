@@ -1,26 +1,105 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="h-full"> <!-- html con altura completa para sticky footer -->
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agroecología Tecnológica | El Salvador</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" /> <!-- Codificación UTF-8 para admitir caracteres especiales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Diseño responsive en móviles -->
+  <title>Agro CLEO Tierra Tech| El Salvador</title>
+
+  <!-- Cargando Tailwind CSS desde carpeta local 'css' -->
+  <link href="css/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-green-50 text-gray-800 font-sans">
+
+<!-- BODY configurado como un contenedor flex vertical con altura mínima de pantalla completa -->
+<body class="bg-green-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+  <!-- HEADER: Título principal de la página -->
   <header class="bg-green-700 text-white py-8 text-center">
-    <h1 class="text-4xl font-bold">Agroecología Tecnológica para El Salvador</h1>
+    <h1 class="text-4xl font-bold">Agro CLEO TECH IA+Satelites</h1>
     <p class="text-lg mt-2">Una visión verde potenciada por satélites e inteligencia artificial</p>
   </header>
-  <main class="max-w-4xl mx-auto p-6">
+
+  <!-- MAIN: contenido principal de la página, con margen automático y padding -->
+  <main class="flex-grow max-w-4xl mx-auto p-6">
+    
+    <!-- Video de YouTube incrustado dentro de un div con proporción 16:9 -->
     <div class="aspect-w-16 aspect-h-9 mb-6">
-      <iframe class="w-full h-96 rounded-xl shadow-lg" src="https://www.youtube.com/embed/DegITHaW57k" title="Uso de Satélite en Agricultura" allowfullscreen></iframe>
+      <iframe class="w-full h-96 rounded-xl shadow-lg"
+              src="https://www.youtube.com/embed/DegITHaW57k"
+              title="Uso de Satélite en Agricultura"
+              allowfullscreen>
+      </iframe>
     </div>
-    <p class="text-xl mb-4">El sector agrícola de El Salvador representa cerca del 5% del PIB. Con tecnología, datos e inteligencia artificial, podemos duplicar ese valor y generar desarrollo rural sostenible.</p>
-    <p class="mb-4">La transformación agroecológica no es solo posible, es necesaria. Esta iniciativa propone el uso de tecnologías satelitales y modelos predictivos para gestionar el territorio de forma más eficiente.</p>
+
+    <!-- Párrafo introductorio en texto grande -->
+    <p class="text-xl mb-4">
+      El sector agrícola de El Salvador lo representan 500,000 agricultores de subsistencia , que contribuyen con cerca del 5% del PIB aproximadamente 2 mil millones de dolares al año. 
+Con tecnología, datos e inteligencia artificial, podemos duplicar ese valor y generar desarrollo rural sostenible.
+    </p>
+
+    <!-- Segundo párrafo informativo -->
+    <p class="mb-4">
+      La transformación agroecológica no es solo posible, es necesaria. Esta iniciativa propone el uso de tecnologías satelitales y modelos predictivos para gestionar el territorio de forma más eficiente, combatir el cambio climatico y 
+empoderar a los agricultores con el turismo rutal.
+    </p>
+
+    <!-- Botones de navegación con estilos de Tailwind -->
     <div class="flex space-x-4 mt-8">
-      <a href="tecnologia.html" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-800">Solución Tecnológica</a>
-      <a href="impacto.html" class="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-800">Impacto Esperado</a>
+      <!-- Botón que lleva a página sobre la tecnología usada -->
+      <a href="tecnologia.html"
+         class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-800">
+        Solución Tecnológica
+      </a>
+
+      <!-- Botón que lleva a página sobre impacto -->
+      <a href="impacto.html"
+         class="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-800">
+        Impacto Esperado
+      </a>
+    <a href="pitch.html"
+     class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-800">
+    Pitch nuestra startup
+     </a>
+
+<a href="proto.html"
+   class="bg-red-500 text-white px-4 py-2 rounded hover:bg-yellow-500">
+   Prototype
+</a>
+ 
     </div>
+
+
+
+<!-- Videos locales informativos -->
+<section class="mt-12 space-y-8">
+
+  <!-- Video 1 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-2">AGRO PARQUE Y MIRADOR "EL TAMBOR"</h2>
+    <video class="w-full rounded shadow-md" controls>
+      <source src="videos/agro1.mp4" type="video/mp4">
+      Tu navegador no soporta videos HTML5.
+    </video>
+  </div>
+
+  <!-- Video 2 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-2">UNO CON LA NATURALEZA</h2>
+    <video class="w-full rounded shadow-md" controls>
+      <source src="videos/natu1.mp4" type="video/mp4">
+      Tu navegador no soporta videos HTML5.
+    </video>
+  </div>
+
+</section>
+
+
+
   </main>
+
+  <!-- FOOTER: siempre se mantiene abajo gracias al flex layout -->
+  <footer class="bg-gray-100 py-6 text-center text-sm text-gray-600">
+    &copy; 2025 Agro CLEO Tierra Tech. Todos los derechos reservados.
+  </footer>
+
 </body>
 </html>
